@@ -14,11 +14,7 @@ Custom Css
 
   }
 
-  body {
-    background-color: #47345f; /* Fondo claro con tono morado */
-    text-align: center;
-}
-
+ 
 /* Estilos para el botón de agregar producto */
 .add-product-btn {
     display: inline-block;
