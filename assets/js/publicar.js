@@ -72,3 +72,55 @@ document.getElementById('productForm').addEventListener('submit', function(e) {
 
     reader.readAsDataURL(productImage);
 });
+async function addProduct() {
+    const name = document.getElementById('productName').value;
+    const price = document.getElementById('productPrice').value;
+    const description = document.getElementById('productDescription').value;
+
+    const response = await fetch('/add-product', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ name, price, description })
+    });
+
+    if (response.ok) {
+        alert('Producto agregado con éxito');
+        loadProducts(); // Cargar la lista de productos actualizada
+    } else {
+        alert('Hubo un error al agregar el producto');
+    }
+}
+
+async function loadProducts() {
+    const response = await fetch('/get-products');
+    const products = await response.json();
+    const productList = document.getElementById('productList');
+    productList.innerHTML = ''; // Limpiar la lista antes de cargar los productos
+
+    products.forEach(product => {
+        const productCard = document.createElement('div');
+        productCard.className = 'tarjeta-publicacion'; // Añadir la clase CSS para el estilo
+
+        const img = document.createElement('img');
+        img.src = 'ruta/a/imagen.jpg'; // Ajusta esta ruta a la imagen correspondiente
+        img.alt = product.name;
+
+        const title = document.createElement('h3');
+        title.textContent = product.name;
+
+        const description = document.createElement('p');
+        description.textContent = product.description;
+
+        // Añadir los elementos a la tarjeta
+        productCard.appendChild(img);
+        productCard.appendChild(title);
+        productCard.appendChild(description);
+
+        // Añadir la tarjeta al contenedor
+        productList.appendChild(productCard);
+    });
+}
+
+window.onload = loadProducts; // Cargar productos cuando la página cargue

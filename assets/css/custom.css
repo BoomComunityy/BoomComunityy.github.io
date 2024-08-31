@@ -14,65 +14,40 @@ Custom Css
 
   }
 
- 
-/* Estilos para el botón de agregar producto */
-.add-product-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #695dac; /* Color morado */
-    color: #ffffff;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 24px;
-    margin-bottom: 20px;
+
+/* CSS para la cuadrícula de publicación */
+.container-publicaciones {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas de tamaño igual */
+  gap: 20px; /* Espacio entre las tarjetas */
+  padding: 20px;
 }
 
-.profile-container {
-    padding: 20px;
-    text-align: center;
+.tarjeta-publicacion {
+  background-color: #695dac; /* Color de fondo morado */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white; /* Color de texto blanco para contraste */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-#profile {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-top: 20px;
+.tarjeta-publicacion img {
+  max-width: 100%; /* Ajuste de imagen al tamaño del contenedor */
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
-.profile-item {
-    background-color: #f3f0f7; /* Fondo más claro con tono morado */
-    border: 1px solid #695dac;
-    border-radius: 8px;
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.tarjeta-publicacion h3 {
+  margin: 0;
+  padding: 5px 0;
 }
 
-.profile-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 10px;
-}
-
-.profile-item h3 {
-    color: #695dac;
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-.profile-item p {
-    color: #333333;
-    margin-bottom: 10px;
-}
-
-.profile-item button {
-    background-color: #695dac;
-    color: #ffffff;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
+.tarjeta-publicacion p {
+  margin: 0;
+  font-size: 14px;
 }
