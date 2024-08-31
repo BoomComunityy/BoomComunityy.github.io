@@ -10,7 +10,79 @@ Custom Css
     top: 65%;
     right: 35px;
     transform: translateY(-65%);
-    cursor: pointer;   
+    cursor: pointer;
 
   }
+
+  body {
+    background-image: url('https://cloudfront-us-east-1.images.arcpublishing.com/infobae/E6KGI3Y62VBKDKJR2VKRFMLSDA.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+/* Estilos para el botón de agregar producto */
+.add-product-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #695dac; /* Color morado */
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.profile-container {
+    padding: 20px;
+    text-align: center;
+}
+
+#profile {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.profile-item {
+    background-color: #f3f0f7; /* Fondo más claro con tono morado */
+    border: 1px solid #695dac;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.profile-item h3 {
+    color: #695dac;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.profile-item p {
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.profile-item button {
+    background-color: #695dac;
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
 
