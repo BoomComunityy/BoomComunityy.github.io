@@ -71,8 +71,8 @@ body, ul, li, p, a, label, input, div {
 #templatemo_nav_top { min-height: 40px; }
 #templatemo_nav_top * { font-size: .9em !important; }
 #templatemo_main_nav a { color: #212934; }
-#templatemo_main_nav a:hover {background: rgb(226,224,227);
-  background: linear-gradient(0deg, rgba(226,224,227,1) 0%, rgba(105,95,168,1) 0%);; }
+#templatemo_main_nav a:hover {background: rgb(188, 163, 201);
+  background: linear-gradient(0deg, rgb(164, 146, 173) 0%, rgba(105,95,168,1) 0%);; }
 #templatemo_main_nav .navbar .nav-icon { margin-right: 20px; }
 
 /* Estilos del formulario de inicio de sesión */
@@ -81,8 +81,8 @@ body, ul, li, p, a, label, input, div {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: rgb(226,224,227);
-  background: linear-gradient(0deg, rgba(226,224,227,1) 0%, rgba(105,95,168,1) 57%); /* Fondo morado */
+  background: #695fa8;
+  background: linear-gradient(0deg, rgb(105, 95, 168) 0%, rgb(105, 95, 168) 57%); /* Fondo morado */
   padding: 20px;
 }
 
