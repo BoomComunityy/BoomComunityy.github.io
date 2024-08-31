@@ -15,11 +15,7 @@ Custom Css
   }
 
   body {
-    background-image: url('https://cloudfront-us-east-1.images.arcpublishing.com/infobae/E6KGI3Y62VBKDKJR2VKRFMLSDA.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #f3f0f7; /* Fondo claro con tono morado */
     text-align: center;
 }
 
@@ -84,5 +80,3 @@ Custom Css
     cursor: pointer;
     font-size: 14px;
 }
-
-
