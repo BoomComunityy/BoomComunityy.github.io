@@ -2,55 +2,57 @@
 Custom Css
 */
 .password-field {
-    position: relative;
-  }
-
-  .password-toggle {
-    position: absolute;
-    top: 65%;
-    right: 35px;
-    transform: translateY(-65%);
-    cursor: pointer;
-
-  }
-
-
-/* CSS para la cuadrícula de publicación */
-.container-publicaciones {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas de tamaño igual */
-  gap: 20px; /* Espacio entre las tarjetas */
-  padding: 20px;
+  position: relative;
 }
 
-.tarjeta-publicacion {
-  background-color: #695dac; /* Color de fondo morado */
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  color: white; /* Color de texto blanco para contraste */
+.password-toggle {
+  position: absolute;
+  top: 65%;
+  right: 35px;
+  transform: translateY(-65%);
+  cursor: pointer; 
+
+}
+
+
+.search-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  position: relative;
+  width: 200px; /* Ancho por defecto */
+  transition: width 0.3s ease;
 }
 
-.tarjeta-publicacion img {
-  max-width: 100%; /* Ajuste de imagen al tamaño del contenedor */
-  height: auto;
+.search-input {
+  border: 1px solid #ddd;
   border-radius: 5px;
-  margin-bottom: 10px;
+  padding: 5px 10px;
+  width: 0; /* Oculto por defecto */
+  opacity: 0;
+  transition: width 0.3s ease, opacity 0.3s ease;
+  position: absolute;
+  left: 0;
 }
 
-.tarjeta-publicacion h3 {
-  margin: 0;
-  padding: 5px 0;
+.search-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  position: absolute;
+  right: 0;
 }
 
-.tarjeta-publicacion p {
-  margin: 0;
-  font-size: 14px;
+.search-container.expanded {
+  width: 300px; /* Ancho al expandirse */
 }
+
+.search-container.expanded .search-input {
+  width: 100%;
+  opacity: 1;
+}
+
+
 .add-product-btn {
   display: inline-block;
   padding: 10px 20px;
@@ -67,4 +69,3 @@ Custom Css
   padding: 20px;
   text-align: center;
 }
-
