@@ -90,6 +90,86 @@
             text-decoration: none;
             cursor: pointer;
         }
+
+        /* Estilo del modal */
+.modal {
+    display: none; /* Ocultar el modal por defecto */
+    position: fixed; /* Fijo en la pantalla */
+    z-index: 1; /* Por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Desplazamiento si es necesario */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo semitransparente */
+}
+
+.modal-content {
+    background-color: #EDE7F6; /* Lila claro */
+    margin: 15% auto; /* Margen para centrar el modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del modal */
+    max-width: 600px; /* Ancho máximo */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo del botón de cerrar */
+.close {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #9277a1; /* Color al pasar el ratón o al hacer foco */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilo del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo de los campos del formulario */
+label {
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+/* Estilo de la vista previa de la imagen */
+#imagePreview {
+    margin-top: 10px;
+}
+
+/* Estilo del botón "Publicar" */
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #695FA8; /* Morado estándar */
+    color: #fff;
+    border: none;
+    border-radius: 25px; /* Bordes redondeados */
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #695FA8; /* Morado oscuro al pasar el ratón */
+}
+
     </style>
 </head>
 <body>
@@ -140,7 +220,8 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contacto</a>
                         </li>
-                        
+                        <li class="nav-item">
+                            
                     </ul>
                 </div>
                 <div class="navbar align-self-center d-flex">
@@ -216,7 +297,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/publicar.js"></script>
 
-    
-        
+   
 </body>
 </html>
