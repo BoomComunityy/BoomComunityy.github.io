@@ -49,7 +49,7 @@ body, ul, li, p, a, label, input, div {
   font-size: 22px !important;
 }
 .logo { font-weight: 500 !important;}
-.text-warning { color: #ffffff !important;}
+.text-warning { color: #7b678f !important;}
 .text-muted { color: hsl(280, 5%, 88%) !important;}
 .text-success { color: #695fa8!important;}
 .text-light { color: #b8b4d3 !important;}
@@ -185,7 +185,7 @@ body, ul, li, p, a, label, input, div {
 }
 
 .modal-header, .modal-footer {
-  background-color: #a8a7a7;
+  background-color: #695dac;
   color: white;
   padding: 10px;
   text-align: center;
@@ -232,7 +232,7 @@ form textarea {
 #template-mo-zay-hero-carousel { background: #efefef !important; }
 .templatemo-accordion a { color: #A07BD2; }
 .templatemo-accordion a:hover { color: #A07BD2; }
-.shop-top-menu a:hover { color: #735faa !important; }
+.shop-top-menu a:hover { color: #c0b9b9 !important; }
 .product-wap { box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); }
 .product-wap .product-color-dot.color-dot-red { background:#f71515; }
 .product-wap .product-color-dot.color-dot-blue { background:#6db4fe; }
