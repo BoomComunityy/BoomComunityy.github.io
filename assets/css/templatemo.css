@@ -140,7 +140,7 @@ body, ul, li, p, a, label, input, div {
 }
 
 .form-container button:hover {
-  background-color: #50347e;
+  background-color: #c7c7c7;
 }
 
 /* Estilos del modal */
