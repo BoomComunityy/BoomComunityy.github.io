@@ -105,7 +105,7 @@ button {
 }
 
 button:hover {
-    background-color: #9992CA;
+    background-color: #695FA8;
 }
 
 
@@ -125,7 +125,7 @@ button:hover {
     margin-bottom: 20px;
     padding: 20px;
     background-color: #fff;
-    border: 1px solid #9992CA;
+    border: 1px solid #695FA8;
     border-radius: 8px;
     display: flex;
     align-items: center;
