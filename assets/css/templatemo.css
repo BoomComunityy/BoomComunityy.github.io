@@ -49,10 +49,10 @@ body, ul, li, p, a, label, input, div {
   font-size: 22px !important;
 }
 .logo { font-weight: 500 !important;}
-.text-warning { color: #b8b4d3 !important;}
+.text-warning { color: #695fa8 !important;}
 .text-muted { color: hsl(280, 5%, 88%) !important;}
 .text-success { color: #b8b4d3 !important;}
-.text-light { color: #b4ade1 !important;}
+.text-light { color: #695fa8 !important;}
 .bg-dark { background-color: #212934 !important;}
 .bg-light { background-color: #e2e0e3 !important;}
 .bg-black { background-color: #1d242d !important;}
