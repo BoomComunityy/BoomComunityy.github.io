@@ -49,7 +49,7 @@ body, ul, li, p, a, label, input, div {
   font-size: 22px !important;
 }
 .logo { font-weight: 500 !important;}
-.text-warning { color: #695FA8 !important;}
+.text-warning { color: #b8b4d3 !important;}
 .text-muted { color: hsl(280, 5%, 88%) !important;}
 .text-success { color: #695FA8 !important;}
 .text-light { color: #b4ade1 !important;}
