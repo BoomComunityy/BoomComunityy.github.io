@@ -58,7 +58,7 @@ body, ul, li, p, a, label, input, div {
 .bg-black { background-color: #1d242d !important;}
 .bg-success { background-color: #b8b4d3 !important;}
 .btn-success {
-  background-color: #96aacf !important;
+  background-color: #836b9e !important;
   border-color: #9992CA !important;
 }
 .pagination .page-link:hover { color: #000; }
@@ -140,7 +140,7 @@ body, ul, li, p, a, label, input, div {
 }
 
 .form-container button:hover {
-  background-color: #c7c7c7;
+  background-color: #9545a5;
 }
 
 /* Estilos del modal */
