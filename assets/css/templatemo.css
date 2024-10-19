@@ -51,7 +51,7 @@ body, ul, li, p, a, label, input, div {
 .logo { font-weight: 500 !important;}
 .text-warning { color: #b8b4d3 !important;}
 .text-muted { color: hsl(280, 5%, 88%) !important;}
-.text-success { color: #695FA8 !important;}
+.text-success { color: #b8b4d3 !important;}
 .text-light { color: #b4ade1 !important;}
 .bg-dark { background-color: #212934 !important;}
 .bg-light { background-color: #e2e0e3 !important;}
