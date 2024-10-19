@@ -104,9 +104,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #695FA8;
-}
+
 
 
 #imagePreview img {
