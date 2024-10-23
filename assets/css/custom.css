@@ -72,8 +72,6 @@ Custom Css
 .buscar {
   position: relative;
   padding: 5px;
-  display: flex;
-  text-align: center;
 }
 
 .buscar input {
@@ -110,3 +108,4 @@ Custom Css
 .buscar input:focus {
   width: 240px;
 }
+
