@@ -70,7 +70,7 @@ Custom Css
   text-align: center;
 }
 .buscar {
-  position: absolute;
+  position: relative;
   padding: 5px;
   flex: auto;
 }
