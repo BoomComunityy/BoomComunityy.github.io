@@ -70,8 +70,9 @@ Custom Css
   text-align: center;
 }
 .buscar {
-  position: relative;
+  position: absolute;
   padding: 5px;
+  flex: auto;
 }
 
 .buscar input {
