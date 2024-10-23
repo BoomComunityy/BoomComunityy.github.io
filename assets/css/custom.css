@@ -73,6 +73,7 @@ Custom Css
   position: relative;
   padding: 5px;
   display: flex;
+  text-align: center;
 }
 
 .buscar input {
@@ -93,14 +94,13 @@ Custom Css
   line-height: 55px;
   top: 0;
   right: 0;
-  position: relative;
+  position: absolute;
   background: #440088;
   text-align: center;
   color: white;
   font-size: 18px;
   border-radius: 50%;
   cursor: pointer;
-  display: flex;
 }
 
 .buscar:hover input {
