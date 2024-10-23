@@ -93,7 +93,7 @@ Custom Css
   line-height: 55px;
   top: 0;
   right: 0;
-  position: static;
+  position: absolute;
   background: #440088;
   text-align: center;
   color: white;
