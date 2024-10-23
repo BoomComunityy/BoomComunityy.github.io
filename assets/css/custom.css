@@ -72,7 +72,7 @@ Custom Css
 .buscar {
   position: relative;
   padding: 5px;
-  flex: auto;
+  display: flex;
 }
 
 .buscar input {
