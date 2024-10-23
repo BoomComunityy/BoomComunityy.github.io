@@ -72,7 +72,7 @@ Custom Css
 .buscar {
   position: relative;
   padding: 5px;
-  
+  align-items: flex-end;
 }
 
 .buscar input {
@@ -85,6 +85,7 @@ Custom Css
   border: 1px solid silver;
   border-radius: 30px;
   transition: all 0.6s ease;
+  position: relative;
 }
 
 .btn {
