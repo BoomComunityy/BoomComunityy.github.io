@@ -49,16 +49,16 @@ body, ul, li, p, a, label, input, div {
   font-size: 22px !important;
 }
 .logo { font-weight: 500 !important;}
-.text-warning { color: #7b678f !important;}
+.text-warning { color: #695FA8 !important;}
 .text-muted { color: hsl(280, 5%, 88%) !important;}
-.text-success { color: #695fa8!important;}
-.text-light { color: #b8b4d3 !important;}
+.text-success { color: #695FA8 !important;}
+.text-light { color: #b4ade1 !important;}
 .bg-dark { background-color: #212934 !important;}
 .bg-light { background-color: #e2e0e3 !important;}
 .bg-black { background-color: #1d242d !important;}
 .bg-success { background-color: #b8b4d3 !important;}
 .btn-success {
-  background-color: #836b9e !important;
+  background-color: #96aacf !important;
   border-color: #9992CA !important;
 }
 .pagination .page-link:hover { color: #000; }
@@ -68,12 +68,12 @@ body, ul, li, p, a, label, input, div {
 }
 
 /* Estilos del navbar */
-#templatemo_nav_top { min-height: 10px; }
+#templatemo_nav_top { min-height: 20px; }
 #templatemo_nav_top * { font-size: .9em !important; }
 #templatemo_main_nav a { color: #212934; }
 #templatemo_main_nav a:hover {background: rgb(188, 163, 201);
   background: linear-gradient(0deg, rgb(164, 146, 173) 0%, rgba(105,95,168,1) 0%);; }
-#templatemo_main_nav .navbar .nav-icon { margin-right: 20px; }
+#templatemo_main_nav .navbar .nav-icon { margin-right: 0px; }
 
 /* Estilos del formulario de inicio de sesión */
 .login-container {
@@ -140,7 +140,7 @@ body, ul, li, p, a, label, input, div {
 }
 
 .form-container button:hover {
-  background-color: #9545a5;
+  background-color: #50347e;
 }
 
 /* Estilos del modal */
@@ -232,7 +232,7 @@ form textarea {
 #template-mo-zay-hero-carousel { background: #efefef !important; }
 .templatemo-accordion a { color: #A07BD2; }
 .templatemo-accordion a:hover { color: #A07BD2; }
-.shop-top-menu a:hover { color: #c0b9b9 !important; }
+.shop-top-menu a:hover { color: #735faa !important; }
 .product-wap { box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); }
 .product-wap .product-color-dot.color-dot-red { background:#f71515; }
 .product-wap .product-color-dot.color-dot-blue { background:#6db4fe; }
@@ -283,7 +283,7 @@ form textarea {
 .leaflet-control a, .leaflet-control { font-size: 10px !important; }
 .form-control { border: 1px solid #e8e8e8; }
 #tempaltemo_footer a { color: #dcdde1; }
-#tempaltemo_footer a:hover { color: #b4acbc; }
+#tempaltemo_footer a:hover { color: #8359ab; }
 #tempaltemo_footer ul.footer-link-list li { padding-top: 10px; }
 #tempaltemo_footer ul.footer-icons li {
   width: 2.6em;
