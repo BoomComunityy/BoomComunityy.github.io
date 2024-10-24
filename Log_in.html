@@ -12,9 +12,12 @@
     <link rel="stylesheet" href="assets/css/templatemo.css">
     <link rel="stylesheet" href="assets/css/custom.css">
 
-    <!-- Cargar fuentes después de los estilos del diseño -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <style>
+    
+    </style>
 </head>
 <body>
 
@@ -48,9 +51,9 @@
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+            <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-center" id="templatemo_main_nav">
                 <div class="flex-fill">
-                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto" style="margin-left: -30px;"> <!-- Ajusta este margen -->
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Inicio</a>
                         </li>
@@ -63,56 +66,42 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contacto</a>
                         </li>
-                        
                         <li class="nav-item">
-                            <a class="nav-link" href="sign_up.html">Registrarse </a>
+                            <a class="nav-link" href="sign_up.html">Registrarse</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="Log_in.html">Iniciar Sesión</a>
                         </li>
-                        <li class="nav-item">
-                            <div class="buscar">
-                                <input type="text" placeholder="Buscar" required />
-                          
-                                <div class="btn">
-                                  <i class="fas fa-search icon">
-                                  </i>
-                                </div>
-                              </div>
-                        </li>
                     </ul>
-                </div>
-                <div class="align-self-center d-flex">
-                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
-                        <div class="input-group">
-                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Buscar ...">
-                            <div class="input-group-text">
-                                <i class="fa fa-fw fa-search"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
-                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
-                    </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="#">
-                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">0</span>
-                    </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="#">
-                        <div class="nav-icon position-relative text-decoration-none" id="userIcon">
-                            <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                            <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">0</span>
-                            <!-- Menú desplegable -->
-                            <div class="dropdown-menu" id="dropdownMenu">
-                                <a href="#">Perfil</a>
-                                <a href="Publicar.html">Publicar</a>
-                            </div>
-                        </div>
-                    </a>
                 </div>
             </div>
         </div>
     </nav>
+
+    <!-- Barra Inferior con Variables, Iconos de Carrito y Perfil -->
+    <div class="buscar">
+        <div class="variables">
+            <div class="variable">
+                Filtrar <i class="fa fa-fw fa-chevron-down"></i>
+            </div>
+            <div class="variable">
+                Categorías <i class="fa fa-fw fa-chevron-down"></i>
+            </div>
+        </div>
+        <input type="text" placeholder="Buscar" required />
+        <div class="btn">
+            <i class="fas fa-search icon"></i>
+        </div>
+        <div class="nav-icons">
+            <a class="nav-icon position-relative text-decoration-none" href="#">
+                <i class="fa fa-fw fa-cart-arrow-down text-dark"></i>
+                <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">0</span>
+            </a>
+            <a class="nav-icon position-relative text-decoration-none" href="#">
+                <i class="fa fa-fw fa-user text-dark"></i>
+            </a>
+        </div>
+    </div>
 
     <!-- Formulario de Inicio de Sesión -->
     <div class="login-container">
@@ -127,17 +116,19 @@
                     <label for="email">Correo electrónico</label>
                     <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico">
 
-<div  class="password-field">
-                    <label for="password">Contraseña</label>
-                    <input type="password" id="password" placeholder="Ingrese su contraseña">
-  <i class="fa fa-eye  password-toggle" onclick="mostrarContrasena()"></i>
-</div>
+                    <div class="password-field">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" placeholder="Ingrese su contraseña">
+                        <i class="fa fa-eye password-toggle" onclick="mostrarContrasena()"></i>
+                    </div>
+
                     <button type="submit">Iniciar sesión</button>
                     <p>¿No estás registrado? <a href="sign_up.html">Regístrate aquí</a>.</p>
                 </form>
             </div>
         </div>
     </div>
+
     <script src="assets/js/signup.js"></script>
 </body>
 </html>
