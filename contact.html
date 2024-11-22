@@ -19,16 +19,97 @@
 
     <!-- Cargar estilos de mapas -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
-    <!--
-    TemplateMo 559 Zay Shop
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    https://templatemo.com/tm-559-zay-shop
-    -->
+    <style>
+        /* Estilos para el cuerpo */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Estilos para el botón */
+        button {
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #695dac;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #55478d;
+        }
+
+        /* Estilos para la barra lateral */
+        #sidebar {
+            width: 250px;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+            display: none;
+        }
+
+        #sidebar h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 1px solid #555;
+            padding-bottom: 10px;
+        }
+
+        #sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #sidebar ul li {
+            margin: 15px 0;
+        }
+
+        #sidebar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        #sidebar ul li a:hover {
+            background-color: #695dac;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- Botón para mostrar/ocultar la barra lateral -->
+    <button onclick="toggleSidebar()"></button>  <i class="material-icons">dehaze</i></button>
+
+    <!-- Barra lateral -->
+    <div id="sidebar">
+        <h2>Barra Lateral</h2>
+        <ul>
+            <li><a href="#">Enlace 1</a></li>
+            <li><a href="#">Enlace 2</a></li>
+            <li><a href="#">Enlace 3</a></li>
+        </ul>
+    </div>
+
     <!-- Inicio Nav Superior -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+    <nav class="navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
         <div class="container text-light">
             <div class="w-100 d-flex justify-content-between">
                 <div>
@@ -48,10 +129,9 @@
     </nav>
     <!-- Fin Nav Superior -->
 
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow">
+    <!-- Encabezado -->
+    <nav class="navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
-
             <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
                 𝘽𝙊𝙊𝙈
             </a>
@@ -60,77 +140,55 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+            <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">Acerca de</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="shop.html">Tienda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contacto</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="sign_up.html">Registrarse </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Log_in.html">Iniciar Sesión</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Acerca de</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">Tienda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sign_up.html">Registrarse</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Log_in.html">Iniciar Sesión</a></li>
                     </ul>
                 </div>
-                <div class="navbar align-self-center d-flex">
+                <div class="align-self-center d-flex">
                     <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
                         <div class="input-group">
-                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Buscar ...">
                             <div class="input-group-text">
                                 <i class="fa fa-fw fa-search"></i>
                             </div>
                         </div>
                     </div>
-                    
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">0</span>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <div class="nav-icon position-relative text-decoration-none" id="userIcon">
+                            <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                            <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">0</span>
+                            <!-- Menú desplegable -->
+                            <div class="dropdown-menu" id="dropdownMenu">
+                                <a href="#">Perfil</a>
+                                <a href="Publicar.html">Publicar</a>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
-
         </div>
     </nav>
-    <!-- Close Header -->
-     <!-- Barra Inferior con Variables, Iconos de Carrito y Perfil -->
-    <div class="buscar">
-        <div class="variables">
-            <div class="variable">
-                Filtrar <i class="fa fa-fw fa-chevron-down"></i>
-            </div>
-            <div class="variable">
-                Categorías <i class="fa fa-fw fa-chevron-down"></i>
-            </div>
-        </div>
-        <input type="text" placeholder="Buscar" required />
-        <div class="btn">
-            <i class="fas fa-search icon"></i>
-        </div>
-        <div class="nav-icons">
-            <a class="nav-icon position-relative text-decoration-none" href="#">
-                <i class="fa fa-fw fa-cart-arrow-down text-dark"></i>
-                <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">0</span>
-            </a>
-            <a class="nav-icon position-relative text-decoration-none" href="#">
-                <i class="fa fa-fw fa-user text-dark"></i>
-            </a>
-        </div>
-    </div>
-
+    <!-- Fin Encabezado -->
 
     <!-- Modal -->
     <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="w-100 pt-1 mb-5 text-right">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <form action="" method="get" class="modal-content modal-body border-0 p-0">
                 <div class="input-group mb-2">
@@ -143,75 +201,121 @@
         </div>
     </div>
 
-    <!-- Inicio Página de Contenido -->
-    <div class="container-fluid bg-light py-5">
-        <div class="col-md-6 m-auto text-center">
-            <h1 class="h1">Contáctanos</h1>
-            <p>
-                Proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Lorem ipsum dolor sit amet.
-            </p>
-        </div>
-    </div>
-
-    <!-- Inicio Mapa -->
-    <div id="mapid" style="width: 100%; height: 300px;"></div>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-    <script>
-        var mymap = L.map('mapid').setView([-23.013104, -43.394365], 13);
-
-        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-            maxZoom: 18,
-            attribution: 'Zay Telmplte | Diseño de Bootstrap 4 | Leaflet',
-            id: 'mapbox/streets-v11'
-        }).addTo(mymap);
-
-        L.marker([-23.013104, -43.394365]).addTo(mymap)
-            .bindPopup('<b>BOOM</b><br>Ubicación de nuestra tienda.')
-            .openPopup();
-    </script>
-    <!-- Fin Mapa -->
-
-    <!-- Inicio Formulario de Contacto -->
-    <div class="container py-5">
+    <section class="container py-5">
         <div class="row">
-            <div class="col-md-8 m-auto">
-                <form action="" method="post">
-                    <div class="row">
-                        <div class="col-md-6 form-group mb-3">
-                            <label for="name">Nombre</label>
-                            <input type="text" class="form-control" id="name" name="name" required>
-                        </div>
-                        <div class="col-md-6 form-group mb-3">
-                            <label for="email">Correo electrónico</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                        <div class="col-md-12 form-group mb-3">
-                            <label for="message">Mensaje</label>
-                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <div class="col-md-12">
-                            <button type="submit" class="btn btn-success">Enviar</button>
-                        </div>
+            <div class="col-md-6">
+                <h2 class="h2 text-black">Contáctanos</h2>
+                <p>Si tienes alguna pregunta o inquietud, por favor completa el formulario de contacto.</p>
+                <form action="send_form_email.php" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
                     </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
             </div>
+            <div class="col-md-6">
+                <div id="map-container" class="z-depth-1-half map-container" style="height: 500px">
+                    <div id="mapid" style="height: 100%;"></div>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- Fin Formulario de Contacto -->
+    </section>
 
-    <!-- Inicio Pie de Página -->
-    <footer class="container-fluid bg-dark text-light py-4">
-        <div class="container text-center">
-            <p class="mb-0">
-                © 2024 𝘽𝙊𝙊𝙈 Shop. Todos los derechos reservados.
-            </p>
+    <!-- Inicio Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">𝘽𝙊𝙊𝙈</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            <strong>GEY QUIEN LO LEA</strong>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:+57 3012866061">301-286-6061</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:boomcomunityy@gmail.com">boomcomunityy@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Accesorios de moda</a></li>
+                        <li><a class="text-decoration-none" href="#">Ropa</a></li>
+                        <li><a class="text-decoration-none" href="#">Zapatos</a></li>
+                        <li><a class="text-decoration-none" href="#">Relojes</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Más información</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Inicio</a></li>
+                        <li><a class="text-decoration-none" href="#">Acerca de nosotros</a></li>
+                        <li><a class="text-decoration-none" href="#">Servicios</a></li>
+                        <li><a class="text-decoration-none" href="#">Contáctanos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            &copy; 2024 BOOM Shop. All Rights Reserved.
+                            | Design: <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
-    <!-- Fin Pie de Página -->
+    <!-- Fin Footer -->
 
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-1wMgjMjbDYNkaZ+3KaZltzD/HX5b8e8kz0CLHr3fAtP4zfrNj3wzJkZA4NwOksl2X/5xkq7+c7R8tHU9sp5kng==" crossorigin=""></script>
+
+    <script>
+        // Inicializar mapa
+        var map = L.map('mapid').setView([5.5353, -73.3674], 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([5.5353, -73.3674]).addTo(map)
+            .bindPopup('Nuestra ubicación.')
+            .openPopup();
+
+        // Función para mostrar/ocultar la barra lateral
+        function toggleSidebar() {
+            var sidebar = document.getElementById('sidebar');
+            if (sidebar.style.display === 'none' || sidebar.style.display === '') {
+                sidebar.style.display = 'block';
+            } else {
+                sidebar.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 
 </html>
