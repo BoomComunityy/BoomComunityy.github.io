@@ -146,3 +146,19 @@ Custom Css
   .variables .variable i {
       font-size: 12px; /* Tamaño de los iconos de flecha */
   }
+
+.titulo{
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px !important;
+  font-weight: 200px !important;
+  color: #695dac;
+}
+.titulodelmes{
+  text-align: center;
+  margin-top: 1rem;
+  color: #695dac;
+}
+.precio{
+  text-align: right;
+  color: #695dac;
+}

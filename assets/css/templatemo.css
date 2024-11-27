@@ -48,14 +48,15 @@ body, ul, li, p, a, label, input, div {
   font-family: 'Roboto', sans-serif;
   font-size: 22px !important;
 }
+
 .logo { font-weight: 500 !important;}
 .text-warning { color: #695FA8 !important;}
 .text-muted { color: hsl(280, 5%, 88%) !important;}
 .text-success { color: #695FA8 !important;}
 .text-light { color: #b4ade1 !important;}
-.bg-dark { background-color: #212934 !important;}
+.bg-dark { background-color: #262d36 !important;}
 .bg-light { background-color: #e2e0e3 !important;}
-.bg-black { background-color: #1d242d !important;}
+.bg-black { background-color: #695FA8 !important;}
 .bg-success { background-color: #b8b4d3 !important;}
 .btn-success {
   background-color: #96aacf !important;
@@ -63,7 +64,7 @@ body, ul, li, p, a, label, input, div {
 }
 .pagination .page-link:hover { color: #000; }
 .pagination .page-link:hover, .pagination .page-link.active {
-  background-color: #1b469a;
+  background-color: #695FA8;
   color: #fff;
 }
 
@@ -123,13 +124,13 @@ body, ul, li, p, a, label, input, div {
   width: calc(100% - 22px);
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #d3bfe0;
+  border: 1px solid #744b90;
   border-radius: 5px;
   font-size: 16px;
 }
 
 .form-container button {
-  background-color: #dddddd;
+  background-color: #9273b1;
   color: white;
   padding: 10px;
   border: none;
@@ -157,16 +158,16 @@ body, ul, li, p, a, label, input, div {
 }
 
 .modal-content {
-  background-color: #fefefe;
+  background-color: #695dac;
   margin: 5% auto; /* Ajustado para mejor centrado */
   padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid #695dac;
   width: 80%; /* Modal más ancho */
   max-width: 800px; /* Ancho máximo para pantallas grandes */
   height: 90%; /* Más alto */
   max-height: 90%; /* Asegura que no exceda el viewport */
   overflow-y: auto; /* Barra de desplazamiento vertical si es necesario */
-  background-color: #cfd6e1;
+  background-color: #695dac;
   border-radius: 10px;
 }
 
