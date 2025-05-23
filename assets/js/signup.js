@@ -41,6 +41,9 @@ function togglePasswordVisibility(id) {
 const passwordField = document.getElementById(id);
 const type = passwordField.type === "password" ? "text" : "password";
 passwordField.type = type;
+if (password !== confirmPassword) 
+  e.preventDefault(); // Detiene el envío
+  alert("Las contraseñas no coinciden.");
 }
 
 function validateForm() {
