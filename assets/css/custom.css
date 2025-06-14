@@ -162,3 +162,11 @@ Custom Css
   text-align: right;
   color: #695dac;
 }
+
+.card-img rounded-0 img-fluid{
+max-height: 900;
+max-width: auto;
+
+
+
+}
