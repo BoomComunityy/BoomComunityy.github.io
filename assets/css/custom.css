@@ -164,8 +164,8 @@ Custom Css
 }
 
 .card-img rounded-0 img-fluid{
-max-height: 900;
-max-width: auto;
+height: 900;
+width: auto;
 
 
 
